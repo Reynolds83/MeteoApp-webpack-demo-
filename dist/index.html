@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="stylesheets/app.css" rel="stylesheet" type="text/css">
+        <title>MeteoApp</title>
+    </head>
+    <body>
+         <div data-module="flipping-meteo">
+            <div class="preloader">
+                <img src="images/preloader.gif" />
+            </div>
+            <div  class="container">
+            <div class="card">
+                <div class="front face">
+                    <!-- front content -->
+                    <div class="primary-info">
+                        <span class="position"></span>
+                        <span class="degrees"></span>
+                    </div>
+                    
+                    <div class="weather-info">
+                        <div class="icon"></div>
+                        <p class="condition"></p>
+                    </div>
+                    
+                    <div class="secondary-info">
+                        <div class="humidity-container">
+                            <p>HUMIDITY:</p>
+                            <span class="humidity"></span>
+                        </div>
+                        <div class="wind-container">
+                            <p>WIND:</p>
+                            <span class="wind"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="days">
+                        <ul>
+                            <li data-day="Mon">Mon</li>
+                            <li data-day="Tue">Tue</li>
+                            <li data-day="Wed">Wed</li>
+                            <li data-day="Thu">Thu</li>
+                            <li data-day="Fri">Fri</li>
+                            <li data-day="Sat">Sat</li>
+                            <li data-day="Sun">Sun</li>
+                        </ul>
+                    </div>
+                    
+                    
+                </div>
+                <div class="back face">
+                    <!-- back content -->                    
+                    <div id="map"></div>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <script src="js/bundle.js"></script>
+    </body>
+</html>

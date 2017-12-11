@@ -1,0 +1,28 @@
+{
+    "name": "webpack-demo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-sass": "^3.1.0",
+        "gulp-scss-lint": "^0.5.0",
+        "gulp-sourcemaps": "^2.6.1",
+        "webpack": "^3.10.0",
+        "webpack-modernizr-loader": "^4.0.0"
+    },
+    "dependencies": {
+        "@babel/core": "^7.0.0-beta.34",
+        "@babel/preset-env": "^7.0.0-beta.34",
+        "babel-loader": "^8.0.0-beta.0",
+        "jquery": "^3.2.1",
+        "load-google-maps-api": "^1.0.0"
+    }
+}

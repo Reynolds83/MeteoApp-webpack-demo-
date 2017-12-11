@@ -1,0 +1,58 @@
+[data-module="flipping-meteo"] {
+    @include absolute-center;
+
+    div.preloader {
+        background-color: $primaryColor;
+        height: 100%;
+        left: 0;        
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+
+        img {
+            @include absolute-center();
+
+            height: 40px;
+            width: 40px;
+        }
+    }
+
+    .container {
+        @extend %dimension;
+        @include perspective();
+                
+        .no-touchevents &.active:hover {
+            .card {
+                @include rotateY();
+            }
+        }
+
+        .card {
+            @extend %dimension;
+            @include transform-style();            
+            @include transition-property();
+            @include transition-duration();
+            
+            left: 0;
+            position: absolute;
+            top: 0;
+            
+            &.flipped {
+                @include rotateY();
+            }
+
+            .face {
+                @extend %dimension;
+                @include backface-visibility();
+                
+                position: absolute;                
+            }
+
+
+            .back {
+                @include rotateY();
+            }
+        }
+    }
+}
